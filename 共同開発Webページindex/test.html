@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>テスト中</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <h1>web共同開発</h1>
-  <p>HTMLとCSSを使います！</p>
-</body>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+        // DOMの準備が整ったら実行する処理を登録
+        $(function() {
+            // id『anim』の要素に、クリック時の処理を登録
+            $("#anim").click(function() {
+                // 『jQuery』の代表的な処理1『アニメーション』
+                $("#target").fadeOut();   // id『target』の要素をフェードアウト
+                $("#target").fadeIn();    // id『target』の要素をフェードイン
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <input type="button" id="anim" value="アニメ">
+        <div id="target">目標の<br>文字列</div>
+    </body>
 </html>
