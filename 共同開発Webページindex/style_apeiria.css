@@ -1,0 +1,164 @@
+.bold{
+    font-weight: bold;
+  }
+  .green{
+    color: #00FF00;
+  }
+  .blue{
+    color: #0000FF;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .underline {
+    text-decoration : underline;
+  }
+  .text{
+    text-align : left ;
+  }
+  .center{
+    text-align: center;
+  }
+  .line-hight{
+    line-height: 24px;
+  }
+  
+  .line{
+    writing-mode: vertical-rl;
+    text-align: left;
+    height: 300px;
+    right: 0;
+  }
+  .ver{
+    vertical-align : top;
+  }
+  body{
+    background-image :url(background.png) ;
+  }
+  html { font-size : 16px ; }
+  h1{
+    font-size: 18px;
+    padding-left: 10px;
+    border-left: solid 5px blue;
+    border-bottom: solid 1px #ccc;
+  }
+  h2 { font-style: 3.2rem ; }
+  h3 { font-style: 2.8rem ; }
+  p { font-style: 1.6rem ; }
+  .box {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    transition: all 300ms 0s ease;
+  }
+  
+  .box:hover {
+    background: #0000FF;
+    width: 300px;
+  }
+  .button {
+    display: inline-block;
+    width: 200px;
+    height: 54px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 54px;
+    outline: none;
+  }
+  .button::before,
+  .button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .button,
+  .button::before,
+  .button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .button {
+    background-color: #333;
+    color: #fff;
+  }
+  .button:hover {
+    background-color: #59b1eb;
+  }
+  .fade-in01{ 
+    font-size:40px;
+    opacity:0;
+    animation-name: sample01; 
+    animation-duration: 5s; 
+    animation-iteration-count:2;
+    animation-fill-mode: forwards; 
+  }
+  @keyframes sample01 {
+  0% {
+    opacity: 0;
+    color:#000;
+  }
+  90% {
+   opacity: 1;
+   color:#000;
+  }
+   100% {
+    opacity: 1;
+    color:#0000FF;
+  } 
+  }
+  .fade-in02{
+    font-size: 24px;
+    opacity:0;
+    animation-name: sample02; 
+    animation-duration: 5s; 
+    animation-iteration-count:1;
+    animation-fill-mode: forwards; 
+  }
+  @keyframes sample02 {
+    0% {
+      opacity: 0;
+      color:#000;
+    }
+    100% {
+     opacity: 1;
+     color:#000;
+    }
+    }
+    .btn01 {
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      display: block;
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+  }
+   
+  .btn01::before {
+      content: '';
+      background-color: #2594d4;
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      z-index: -1;
+      border-radius: 50%;
+      box-shadow:
+          0 0 0 0 #fff,
+          0 0 0 0 #3f52c2;
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
+  }
+  .btn01:hover::before {
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      box-shadow:
+          0 0 0 25px rgb(241, 241, 241),
+            0 0 0 27px #1934ca
+  }

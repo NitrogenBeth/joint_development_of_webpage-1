@@ -13,8 +13,14 @@
 ・サルワカ(HTML&CSS入門)　　　　　　　　　　　←これ少し難しめかもです
     https://saruwakakun.com/html-css/basic
 
+////////////////////////////////////////////////////////////
+フリー素材系
 
+・freepick
+    https://www.freepik.com/stories
 
+・HTML5 タグリファレンス
+　　https://reference.hyper-text.org/html5/
 
 
 

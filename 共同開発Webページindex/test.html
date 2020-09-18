@@ -24,14 +24,32 @@
                 name2
             </li>
             <li>
-                name3
+                <a href="N_first.html">N</a>
             </li>
             <li>
-                name4
+                <a href="apeiria_intro.html">Apeiria</a>
             </li>
         </ul>        
         <div class="red">css</div>
         <p>テステス</p>
-        <a href="02.html">hello</a>
+        <a href="02.html">hello</a><br>
+
+
+        <script type="text/javascript" language="javascript">
+            function onButtonClick() {
+              target = document.getElementById("name");
+              target.innerText = document.forms.id_form1.id_textBox1.value;
+            }
+      </script>
+
+
+        <form name="form1" id="id_form1" action="/test.html" method="get">
+            <input name="textBox1" id="id_textBox1" type="text" value="" />
+            <input type="button" value="送る" onclick="onButtonClick();" />
+        </form>
+        <hr/>
+        <div id="output"></div>
+
+
     </body>
 </html>
