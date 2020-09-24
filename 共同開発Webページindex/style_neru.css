@@ -1,0 +1,35 @@
+/*背景色変える時のタグの名前
+ヘッダーとメインとフッター全部同時に変えたい時、方法ないのかな*/
+.black{
+    margin: 0px;
+    background-color: black;
+    color:white;
+    padding:30px;
+    font-size: 20px;
+}
+body{
+    margin: 0px;
+}
+.ul_style{
+    list-style: none;
+    float:left;
+}
+.header{
+    margin: 0%;
+    background-color:aqua;
+}
+.header-logo{
+    color:white;
+}
+/*?*/
+*{
+    background-color: aqua;
+}
+
+
+h1{
+    color:red;
+}
+.red_font{
+    color: red;
+}

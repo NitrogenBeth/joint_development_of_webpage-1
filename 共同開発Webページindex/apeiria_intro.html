@@ -5,8 +5,13 @@
   <title>テスト用web</title>
   <meta charset="UTF-8">
 </head>
-<h1>自己紹介ページ</h1>
-<p class="fade-in01">Apeiriaの自己紹介</p>
+<a href="#move1">
+  近況にJUMPするよ！
+</a><br>
+<a href="#move2">
+  ページ最下部までJUMPするよ！
+  </a>
+<p class="fade-in01" id="move3">Apeiriaの自己紹介</p>
 <a class="button" href="test.html" href="#" target="_top">Home</a>
 <a class="button" href="ramen.html" href="#" target="_top">ラーメン</a>
 <a class="button" href="apeiria_amimation.html" href="#" target="_top">Animation</a>
@@ -14,6 +19,20 @@
 <img src="img/icon.jpg" width="607" height="400" alt="有坂真白"/><br>
     
 <body>
+　<!-- 自動スクロールのスクリプト-->
+  <script>
+    $(function () {
+   $('a[href^=#]').click(function() {
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+   });
+});
+    </script>
+    
    <h1>やってること</h1>
     <ul>
         <li>C/C++</li>
@@ -33,8 +52,7 @@
       <li>這いよれ！ニャル子さん</li>
       <li>人類は衰退しました</li>
     </ul>
-
-  <h1>近況</h1>
+  <h1 id="move1">近況</h1>
     <p>競技プログラミングサボり気味。強くなれない。</p>
     <p>一緒にﾌﾟﾛｸﾞﾗﾐﾝｸﾞしてくれるお友達募集中。</p>
     <p>オンライン授業推進派。これのおかげで出席不足落単科目が減り、GPAが1.8から2.0に上がりました。天才です！</p>
@@ -47,8 +65,8 @@
   <p>整数論を真面目にやりたいと思ってましたが、ﾌﾟﾛｸﾞﾗﾐﾝｸﾞで手一杯気味。</p>
   <p>手広くﾌﾟﾛｸﾞﾗﾐﾝｸﾞをやっていきたいので、「この言語勉強したいんだけど一緒にやらない？」って言ってくれたらめっちゃ嬉しいです。ついていきます(他力本願)</p>
 
-
-  <h1>以下、CSSのテストです</h1>
+  <a class="button"href="#" target="_top" id="move3">TOPに戻る</a>
+  <h1 id="move2">以下、CSSのテストです</h1>
   <div class="box white">のびるよ！</div>
   <p class="bold">CSSはカスケーディングします</p>
   <p class="bold">太文字</p>
@@ -76,5 +94,6 @@
       <p>Copyright &copy; Apeiria</p>
     </address>
   </footer>  
+  
 </body>
 </html>
